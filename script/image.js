@@ -7,7 +7,7 @@ function getRandom() {
 }
 function paintImg(imgNumber) {
     const image = new Image();
-    image.src = `./images/${imgNumber}.jpg`;
+    image.src = `/images/${imgNumber}.jpg`;
     backgroundDiv.appendChild(image);
 }
 function init() {
