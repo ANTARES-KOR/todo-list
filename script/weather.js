@@ -25,7 +25,7 @@ function printWeather(weatherObj) {
     const citySpan = document.querySelector(".city");
     const tempSpan = document.querySelector(".temp");
     citySpan.innerText = weatherObj.city;
-    tempSpan.innerText = weatherObj.temperature;
+    tempSpan.innerHTML = `${weatherObj.temperature}&#8451;`;
 }
 
 function loadCoords() {
