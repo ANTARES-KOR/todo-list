@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import "./reset.css";
+:root {
+    --aurora-green: #78e08f;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+input {
+    background: transparent;
+    color: white;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25vh;
+}
+.clock {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.ask-name-container {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.ask-name {
+    width: 150px;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: start;
+    padding: 0px 10px;
+    transition: border 0.3s linear;
+}
+.ask-name:focus {
+    border-bottom: 2px solid white;
+    outline: none;
+}
+.hide {
+    display: none;
+}
+
+.todo-list-container {
+    margin-top: 20px;
+    width: 50vw;
+}
+.todo-list-container input {
+    padding: 3px 0px;
+    width: 35vw;
+    height: 30px;
+    max-width: 200px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s linear;
+}
+.todo-list-container input:hover {
+    will-change: width, border;
+}
+.todo-list-container input:focus {
+    width: 40vw;
+    max-width: 300px;
+    outline: none;
+}
+.todo-list-container ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+}
+.todo-list-container li {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 18px;
+}
+.todo-list-container li button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+}
+.deleteBtn {
+    color: red;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+.background img {
+    width: 100%;
+    height: auto;
+    animation: fadeIn 0.5s linear 0.2s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.weather-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

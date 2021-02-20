@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" ; />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="clock-container">
+            <h3 class="clock">11:11</h3>
+        </div>
+        <div class="ask-name-container">
+            <form>
+                <label>
+                    당신의 이름은?
+                    <input class="ask-name" type="text" />
+                </label>
+            </form>
+            <h3 class="hide name-message"></h3>
+            <h4 class="hide time-message"></h4>
+        </div>
+        <div class="todo-list-container hide">
+            <form>
+                <input class="todo-input" type="text" />
+            </form>
+            <ul></ul>
+        </div>
+        <div class="weather-container">
+            <span class="city"></span>
+            <span class="temp"></span>
+            <span class="weather"></span>
+        </div>
+        <div class="background"></div>
+        <script src="./script/image.js"></script>
+        <script src="./script/todo.js"></script>
+        <script src="./script/clock.js"></script>
+        <script src="./script/ask-name.js"></script>
+        <script src="./script/weather.js"></script>
+    </body>
+</html>
